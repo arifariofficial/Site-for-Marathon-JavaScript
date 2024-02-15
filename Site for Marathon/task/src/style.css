@@ -1,0 +1,93 @@
+body {
+    font-family: "Roboto", "Helvetica Neue", "Arial", sans-serif;
+}
+
+body, iframe {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+.iframe-container {
+    width: 100vw;
+    display: block;
+}
+
+.iframe-youtube {
+    display: block;
+    height: 80vh;
+}
+
+.iframe-weather {
+    display: block;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80vh; /* Adjusted to cover the entire height of the iframe */
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.video-overlay h1 {
+    color: white;
+    font-size: 73px;
+    text-align: center;
+    top: 150px;
+}
+
+.video-overlay button {
+    padding: 5px 10px;
+    border: 2px solid white;
+    color: white;
+    background: transparent;
+    font-size: 24px;
+}
+
+.distance-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.distance-container h2 {
+    font-size: 32px;
+}
+
+.distance {
+    clear: both;
+    display: table;
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+
+.distance img {
+    width: 49%;
+    height: auto;
+}
+
+.distance:nth-of-type(odd) img {
+    float: left;
+}
+
+.distance:nth-of-type(even) img {
+    float: right;
+}
+
+.map-container {
+    margin: 5px;
+}
+
+.distance-image {
+    filter: saturate(100%);
+}
+.distance-image:hover {
+    filter: saturate(200%);
+}
